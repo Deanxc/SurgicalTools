@@ -14,4 +14,3 @@ Retractor
 Scissors
 Speculum
 Knife
-Test
