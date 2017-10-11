@@ -1,7 +1,8 @@
-﻿<Properties>
+﻿<Properties StartupConfiguration="{5F31566D-3ADA-154D-3A6A-3D96F5809EDA}|Unit Tests">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/drop.cs">
     <Files>
-      <File FileName="Assets/drop.cs" Line="24" Column="9" />
+      <File FileName="Assets/drop.cs" Line="6" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

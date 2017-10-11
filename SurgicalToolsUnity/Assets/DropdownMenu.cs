@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class drop : MonoBehaviour {
+public class DropdownMenu : MonoBehaviour {
 
     // Use this for initialization
     private void Start()
