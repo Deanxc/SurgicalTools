@@ -26,6 +26,7 @@ public class drop : MonoBehaviour {
         {
             GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
             Instantiate(cube);
+
         }
         else if(input.Equals(1))
         {
