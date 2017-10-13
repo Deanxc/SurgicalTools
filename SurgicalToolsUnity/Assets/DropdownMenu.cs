@@ -25,18 +25,21 @@ public class DropdownMenu : MonoBehaviour {
         if(input.Equals(0))
         {
             GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            cube.AddComponent<MovingObject>();
             Instantiate(cube);
 
         }
         else if(input.Equals(1))
         {
             GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+            sphere.AddComponent<MovingObject>();
             Instantiate(sphere);
         }
         else if(input.Equals(2))
         {
-            GameObject plane = GameObject.CreatePrimitive(PrimitiveType.Plane);
-            Instantiate(plane);
+            GameObject capsule = GameObject.CreatePrimitive(PrimitiveType.Capsule);
+            capsule.AddComponent<MovingObject>();
+            Instantiate(capsule);
         }
 
     }
