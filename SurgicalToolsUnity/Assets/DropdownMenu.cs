@@ -13,7 +13,7 @@ public class DropdownMenu : MonoBehaviour {
         if (this.GetComponent<Dropdown>() != null)
         {
             this.GetComponent<Dropdown>().captionText.text = "Surgical Tools";
-        }
+        }   
 	}
 	
 	// Update is called once per frame
@@ -42,7 +42,7 @@ public class DropdownMenu : MonoBehaviour {
             capsule.AddComponent<MovingObject>();
             //Instantiate(capsule);
         }
-        else if(input.Equals(3))
+        else if(input.Equals(10))
         {
             Instantiate(human);
         }
