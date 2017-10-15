@@ -1,9 +1,17 @@
-﻿<Properties StartupConfiguration="{5F31566D-3ADA-154D-3A6A-3D96F5809EDA}|Unit Tests">
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/drop.cs">
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/DropdownMenu.cs">
     <Files>
-      <File FileName="Assets/drop.cs" Line="6" Column="1" />
+      <File FileName="Assets/DropdownMenu.cs" Line="33" Column="33" />
     </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="SurgicalTools" expanded="True">
+            <Node name="Assembly-CSharp" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

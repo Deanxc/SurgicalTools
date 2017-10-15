@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class DropdownMenu : MonoBehaviour {
 
+    public GameObject human;
+
     // Use this for initialization
     private void Start()
     {
@@ -27,19 +29,22 @@ public class DropdownMenu : MonoBehaviour {
             GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
             cube.AddComponent<MovingObject>();
             Instantiate(cube);
-
         }
         else if(input.Equals(1))
         {
             GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
             sphere.AddComponent<MovingObject>();
-            Instantiate(sphere);
+            //Instantiate(sphere);
         }
         else if(input.Equals(2))
         {
             GameObject capsule = GameObject.CreatePrimitive(PrimitiveType.Capsule);
             capsule.AddComponent<MovingObject>();
-            Instantiate(capsule);
+            //Instantiate(capsule);
+        }
+        else if(input.Equals(3))
+        {
+            Instantiate(human);
         }
 
     }
