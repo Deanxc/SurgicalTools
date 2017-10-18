@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class DropdownMenu : MonoBehaviour {
 
     public GameObject human;
+    public GameObject scalpel;
 
     // Use this for initialization
     private void Start()
@@ -32,20 +33,25 @@ public class DropdownMenu : MonoBehaviour {
         }
         else if(input.Equals(1))
         {
+            Instantiate(scalpel);
+        }
+        else if (input.Equals(2))
+        {
+            Instantiate(human);
+        }
+        else if(input.Equals(3))
+        {
             GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
             sphere.AddComponent<MovingObject>();
             //Instantiate(sphere);
         }
-        else if(input.Equals(2))
+        else if(input.Equals(4))
         {
             GameObject capsule = GameObject.CreatePrimitive(PrimitiveType.Capsule);
             capsule.AddComponent<MovingObject>();
             //Instantiate(capsule);
         }
-        else if(input.Equals(10))
-        {
-            Instantiate(human);
-        }
+
 
     }
 }

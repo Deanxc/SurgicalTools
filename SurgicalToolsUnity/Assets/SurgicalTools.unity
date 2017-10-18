@@ -549,6 +549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   human: {fileID: 100000, guid: dbb1c0e079dae462caa67fbbbe509e81, type: 3}
+  scalpel: {fileID: 1507716132090018, guid: 076364fbe6af446dbafa530d141a265e, type: 2}
 --- !u!1 &680525046
 GameObject:
   m_ObjectHideFlags: 0
@@ -725,6 +726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   human: {fileID: 100000, guid: dbb1c0e079dae462caa67fbbbe509e81, type: 3}
+  scalpel: {fileID: 1507716132090018, guid: 076364fbe6af446dbafa530d141a265e, type: 2}
 --- !u!1 &1086725318
 GameObject:
   m_ObjectHideFlags: 0
@@ -1009,6 +1011,8 @@ MonoBehaviour:
     m_Options:
     - m_Text: Forceps
       m_Image: {fileID: 0}
+    - m_Text: Scalpel
+      m_Image: {fileID: 0}
     - m_Text: Syringe
       m_Image: {fileID: 0}
     - m_Text: Grasping Forceps
@@ -1026,6 +1030,8 @@ MonoBehaviour:
     - m_Text: Trays x3
       m_Image: {fileID: 0}
     - m_Text: 2 ambient occlusion textures
+      m_Image: {fileID: 0}
+    - m_Text: Human Model
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1065,7 +1071,7 @@ MonoBehaviour:
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
-  m_FillCenter: 1
+  m_FillCenter: 0
   m_FillMethod: 4
   m_FillAmount: 1
   m_FillClockwise: 1
@@ -1088,6 +1094,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   human: {fileID: 100000, guid: dbb1c0e079dae462caa67fbbbe509e81, type: 3}
+  scalpel: {fileID: 0}
 --- !u!1 &1355382572
 GameObject:
   m_ObjectHideFlags: 0
