@@ -1013,6 +1013,8 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: Scalpel
       m_Image: {fileID: 0}
+    - m_Text: Human
+      m_Image: {fileID: 0}
     - m_Text: Syringe
       m_Image: {fileID: 0}
     - m_Text: Grasping Forceps
@@ -1030,8 +1032,6 @@ MonoBehaviour:
     - m_Text: Trays x3
       m_Image: {fileID: 0}
     - m_Text: 2 ambient occlusion textures
-      m_Image: {fileID: 0}
-    - m_Text: Human Model
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
