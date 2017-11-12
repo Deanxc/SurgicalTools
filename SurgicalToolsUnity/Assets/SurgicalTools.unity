@@ -1054,6 +1054,8 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
+    - m_Text: None
+      m_Image: {fileID: 0}
     - m_Text: Human
       m_Image: {fileID: 0}
     - m_Text: Forcepts
@@ -1522,7 +1524,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Human
+  m_Text: None
 --- !u!222 &2037075436
 CanvasRenderer:
   m_ObjectHideFlags: 0
