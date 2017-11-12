@@ -18,8 +18,9 @@ public class DropdownMenu : MonoBehaviour {
     private void Start()
     {
         if (this.GetComponent<Dropdown>() != null)
-        {
+        {   
             this.GetComponent<Dropdown>().captionText.text = "Surgical Tools";
+            this.GetComponent<Dropdown>().itemText.fontSize = 8;
         }   
 	}
 	
@@ -33,10 +34,13 @@ public class DropdownMenu : MonoBehaviour {
 
         if (input.Equals(0))
         {
+            human.transform.Translate(0,0,0);
             Instantiate(human);
         }
         else if (input.Equals(1))
         {
+            forceps.transform.Translate(5, 0, 0);
+            forceps.transform.localScale = new Vector3(10, 10, 10);
             Instantiate(forceps);
         }
         else if (input.Equals(2))
