@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/SurgicalTools.unity
+- path: Assets/Surgical_instruments/Scenes/Demo_scene.unity
   isLoaded: 1
   isActive: 1
