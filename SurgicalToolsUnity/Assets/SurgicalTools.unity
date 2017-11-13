@@ -454,6 +454,7 @@ GameObject:
   - component: {fileID: 613189820}
   - component: {fileID: 613189819}
   - component: {fileID: 613189823}
+  - component: {fileID: 613189824}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -556,6 +557,24 @@ MonoBehaviour:
   surgicalMirror: {fileID: 135296, guid: 900758dc729b0bf40aa5ac52d16bd524, type: 2}
   surgicalSaw: {fileID: 189084, guid: 34361058a23be0940874cea58bee80d4, type: 2}
   syringe: {fileID: 145844, guid: 828baf396993e1d42ab0a8950c0d9eec, type: 2}
+--- !u!114 &613189824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 613189818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d1a2a33ffcac354298137001635a001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxGazeCollisionDistance: 10
+  RaycastLayerMasks:
+  - serializedVersion: 2
+    m_Bits: 4294967291
+  Stabilizer: {fileID: 0}
+  GazeTransform: {fileID: 0}
+  DebugDrawRay: 0
 --- !u!1 &680525046
 GameObject:
   m_ObjectHideFlags: 0
