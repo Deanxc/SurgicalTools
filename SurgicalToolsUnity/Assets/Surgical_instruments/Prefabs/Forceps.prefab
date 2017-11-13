@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 498534}
   - component: {fileID: 3341740}
   - component: {fileID: 2389180}
+  - component: {fileID: 114544839788511992}
   m_Layer: 0
   m_Name: Forceps
   m_TagString: Untagged
@@ -80,3 +81,20 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 126434}
   m_IsPrefabParent: 1
+--- !u!114 &114544839788511992
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d5a0a60fbe897549ad0bfe2039f12b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HostTransform: {fileID: 0}
+  DistanceScale: 2
+  RotationMode: 0
+  PositionLerpSpeed: 0.2
+  RotationLerpSpeed: 0.2
+  IsDraggingEnabled: 1
