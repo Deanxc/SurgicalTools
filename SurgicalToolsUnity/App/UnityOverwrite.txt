@@ -7,10 +7,10 @@
 # Default behavior is to never overwrite files
 SurgicalTools.sln: modified
 GeneratedProjects\UWP\Assembly-CSharp\project.json: 4FCF72A4D5EDB37E24C206A7BCFE7AF1
-SurgicalTools\App.cs: 89129FC94FB11859D4713CA5C613C64D
-SurgicalTools\Package.appxmanifest: 087E53B0C18C0EFC3CA35C516F7BC57C
+SurgicalTools\App.cs: modified
+SurgicalTools\Package.appxmanifest: 11E1B79F79DF73A4EFE8AD446B96DFB4
 SurgicalTools\project.json: 1D02BC64BAC0D041019673A1C4C51737
-SurgicalTools\SurgicalTools.csproj: 97BEBB334CE71E3394AC6F38C9542EB3
+SurgicalTools\SurgicalTools.csproj: F9FF7593D44A7212CDDAF47B8F5D8B64
 SurgicalTools\SurgicalTools.csproj.user: modified
 SurgicalTools\Assets\SplashScreen.scale-200.png: 60618416282ED104FD1473935716045D
 SurgicalTools\Assets\Square150x150Logo.scale-200.png: E02834B4A5DFB97FF8E212C1CACBB084
@@ -20,5 +20,5 @@ SurgicalTools\Assets\StoreLogo.png: 90BD194CA4A7CFFF3E8B8222229857FB
 SurgicalTools\Assets\Wide310x150Logo.scale-200.png: C96846A80DF667F87355569CD816192D
 SurgicalTools\obj\x86\Debug\SurgicalTools.csproj.CopyComplete: D41D8CD98F00B204E9800998ECF8427E
 SurgicalTools\obj\x86\Release\SurgicalTools.csproj.CopyComplete: D41D8CD98F00B204E9800998ECF8427E
-SurgicalTools\Properties\AssemblyInfo.cs: 0B3DBC4F6B94AFF945A7ED80630F8A75
+SurgicalTools\Properties\AssemblyInfo.cs: modified
 SurgicalTools\Properties\Default.rd.xml: 72EB282657164E79A1C42F6240984826
