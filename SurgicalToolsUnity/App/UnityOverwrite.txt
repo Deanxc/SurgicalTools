@@ -10,7 +10,7 @@ GeneratedProjects\UWP\Assembly-CSharp\project.json: 4FCF72A4D5EDB37E24C206A7BCFE
 SurgicalTools\App.cs: modified
 SurgicalTools\Package.appxmanifest: 11E1B79F79DF73A4EFE8AD446B96DFB4
 SurgicalTools\project.json: 1D02BC64BAC0D041019673A1C4C51737
-SurgicalTools\SurgicalTools.csproj: F9FF7593D44A7212CDDAF47B8F5D8B64
+SurgicalTools\SurgicalTools.csproj: B02B904A0CECC6866A4E53D0275092E9
 SurgicalTools\SurgicalTools.csproj.user: modified
 SurgicalTools\Assets\SplashScreen.scale-200.png: 60618416282ED104FD1473935716045D
 SurgicalTools\Assets\Square150x150Logo.scale-200.png: E02834B4A5DFB97FF8E212C1CACBB084

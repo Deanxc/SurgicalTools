@@ -343,7 +343,7 @@
 
   <ItemGroup>
     <ProjectReference Include="C:\Users\Navin\Documents\GitHub\SurgicalTools\SurgicalToolsUnity\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj">
-      <Project>{34dc8fdd-9848-48f4-b734-3797f1877e5c}</Project>
+      <Project>{b1c6274c-9e33-48ee-a848-7f8dc79ec886}</Project>
       <Name>Assembly-CSharp</Name>
       <Private>False</Private>
     </ProjectReference>
