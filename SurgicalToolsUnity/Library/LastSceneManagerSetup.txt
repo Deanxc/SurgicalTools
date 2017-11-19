@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/SurgicalTools.unity
+- path: Assets/MRDesignLab/HUX/Examples/ButtonsAndReceivers.unity
   isLoaded: 1
   isActive: 1
