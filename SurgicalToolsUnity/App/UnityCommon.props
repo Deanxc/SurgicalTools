@@ -1,9 +1,0 @@
-﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <PropertyGroup>
-        <UnityWSASolutionName>SurgicalTools</UnityWSASolutionName>
-        <UnityWSASolutionDir>C:\Users\Navin\Documents\GitHub\SurgicalTools\SurgicalToolsUnity\App\</UnityWSASolutionDir>
-        <UnityProjectDir>C:\Users\Navin\Documents\GitHub\SurgicalTools\SurgicalToolsUnity\</UnityProjectDir>
-        <UnityWSAPlayerDir>C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\</UnityWSAPlayerDir>
-        <UnityWSAToolsDir>$(UnityWSASolutionDir)Unity\Tools\</UnityWSAToolsDir>
-    </PropertyGroup>
-</Project>

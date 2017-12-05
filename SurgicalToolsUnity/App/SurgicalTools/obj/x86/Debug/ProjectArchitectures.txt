@@ -1,2 +1,0 @@
-C:\Users\Navin\Documents\GitHub\SurgicalTools\SurgicalToolsUnity\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
-C:\Users\Navin\Documents\GitHub\SurgicalTools\SurgicalToolsUnity\App\SurgicalTools\SurgicalTools.csproj;x86

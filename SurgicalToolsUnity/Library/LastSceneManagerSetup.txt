@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/SurgicalTools.unity
-  isLoaded: 1
-  isActive: 1

@@ -1,1 +1,0 @@
-Dropdown clicking in HoloLens: https://forum.unity.com/threads/unity-ui-on-the-hololens.394629/
