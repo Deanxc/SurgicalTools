@@ -81,8 +81,6 @@ namespace LocalJoost.HoloToolkitExtensions
 
         void Move(Vector3 manipulationData)
         {
-            
-
             var delta = manipulationData*MoveSpeed;
             if (CollisonDetector.CheckIfCanMoveBy(delta))
             {

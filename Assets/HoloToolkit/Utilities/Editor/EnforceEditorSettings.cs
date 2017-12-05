@@ -5,9 +5,6 @@ using UnityEditor;
 
 namespace HoloToolKit.Unity
 {
-    /// <summary>
-    /// Sets Force Text Serialization and visible meta files in all projects that use the HoloToolkit.
-    /// </summary>
     [InitializeOnLoad]
     public class EnforceEditorSettings
     {
