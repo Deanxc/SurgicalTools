@@ -6,6 +6,7 @@ namespace LocalJoost.HoloToolkitExtensions
         None,
         Move,
         Rotate,
-        Scale
+        Scale,
+        Delete
     }
 }

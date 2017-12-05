@@ -76,6 +76,10 @@ namespace LocalJoost.HoloToolkitExtensions
                 case ManipulationMode.Scale:
                     Scale(manipulationData);
                     break;
+                case ManipulationMode.Delete:
+                    Delete(manipulationData);
+                    break;
+
             }
         }
 
@@ -101,6 +105,12 @@ namespace LocalJoost.HoloToolkitExtensions
         void Scale(Vector3 manipulationData)
         {
             transform.localScale *= 1.0f - (manipulationData.z*ScaleSpeed);
+        }
+
+        void Delete(Vector3 manipulationData)
+        {
+            Destroy(AppStateManager.Instance.SelectedGameObject);
+            //transform.localScale *= 1.0f - (manipulationData.z * ScaleSpeed);
         }
     }
 }

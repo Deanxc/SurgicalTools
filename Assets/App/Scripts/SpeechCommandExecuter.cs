@@ -33,6 +33,11 @@ public class SpeechCommandExecuter : MonoBehaviour
         TryChangeMode(ManipulationMode.None);
     }
 
+    public void Delete()
+    {
+        TryChangeMode(ManipulationMode.Delete);
+    }
+
     public void Faster()
     {
         TryChangeSpeed(true);
