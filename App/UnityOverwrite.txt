@@ -9,7 +9,7 @@ ManipulateByGesture.sln: modified
 GeneratedProjects\UWP\Assembly-CSharp\project.json: 4FCF72A4D5EDB37E24C206A7BCFE7AF1
 GeneratedProjects\UWP\Assembly-CSharp-firstpass\project.json: 4FCF72A4D5EDB37E24C206A7BCFE7AF1
 ManipulateByGesture\App.cs: 1B524DD6136B04A9C07D735178E67BC3
-ManipulateByGesture\ManipulateByGesture.csproj: B77D53A09899905F7C0D5633E0A787D0
+ManipulateByGesture\ManipulateByGesture.csproj: B05B3FFCEB610625D8B6C8EEF42FEB58
 ManipulateByGesture\ManipulateByGesture.csproj.user: modified
 ManipulateByGesture\Package.appxmanifest: 793F79F7F593263D6D429D0541A5EC0A
 ManipulateByGesture\project.json: 1D02BC64BAC0D041019673A1C4C51737
