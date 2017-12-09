@@ -10,6 +10,12 @@ GameObject:
   - component: {fileID: 405830}
   - component: {fileID: 3329210}
   - component: {fileID: 2354962}
+  - component: {fileID: 65783056084675128}
+  - component: {fileID: 114861577620279540}
+  - component: {fileID: 114199719218991642}
+  - component: {fileID: 114394997490126442}
+  - component: {fileID: 114970408621011668}
+  - component: {fileID: 114449308933115866}
   m_Layer: 0
   m_Name: Surgical_mirror
   m_TagString: Untagged
@@ -24,8 +30,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 135296}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalPosition: {x: 1, y: 1, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -81,3 +87,95 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 135296}
   m_IsPrefabParent: 1
+--- !u!65 &65783056084675128
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135296}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.029054224, y: 0.19075006, z: 0.013221985}
+  m_Center: {x: -0.00058349967, y: 0.002764117, z: -0.0030498027}
+--- !u!114 &114199719218991642
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d5a0a60fbe897549ad0bfe2039f12b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HostTransform: {fileID: 0}
+  DistanceScale: 2
+  IsKeepUpright: 0
+  IsOrientTowardsUser: 0
+  IsDraggingEnabled: 1
+--- !u!114 &114394997490126442
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54c43c8e04bfe9546b8d47be5b0f6850, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceps: {fileID: 126434, guid: 67f1421c046a4594a8569588ba048050, type: 2}
+  graspingForceps: {fileID: 144448, guid: b6878703de721a142a1ae1e17db9b3d2, type: 2}
+  lancet: {fileID: 156074, guid: 299c28e1ab596b84481d5121867b0a03, type: 2}
+  scissors: {fileID: 139494, guid: 401a296255ba0f24f9ab6cb41086d4b3, type: 2}
+  surgicalMirror: {fileID: 135296}
+  surgicalSaw: {fileID: 189084, guid: 34361058a23be0940874cea58bee80d4, type: 2}
+  surgicalHook: {fileID: 109434, guid: 2d03d5e4fe54fd844b585de305653f05, type: 2}
+  syringe: {fileID: 145844, guid: 828baf396993e1d42ab0a8950c0d9eec, type: 2}
+--- !u!114 &114449308933115866
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3140b3056266c004c91b29fcd79aa0b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MinDistance: 0
+--- !u!114 &114861577620279540
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d1a2a33ffcac354298137001635a001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxGazeCollisionDistance: 10
+  RaycastLayerMasks:
+  - serializedVersion: 2
+    m_Bits: 4294967291
+  Stabilizer: {fileID: 0}
+  GazeTransform: {fileID: 0}
+--- !u!114 &114970408621011668
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f035d823842c2e744ad1c8186dd6525f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveSpeed: 0.1
+  RotateSpeed: 6
+  ScaleSpeed: 0.2
+  Stabilizer: {fileID: 0}
+  CollisonDetector: {fileID: 0}
