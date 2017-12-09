@@ -85,11 +85,12 @@ namespace LocalJoost.HoloToolkitExtensions
 
         void Move(Vector3 manipulationData)
         {
-            var delta = manipulationData*MoveSpeed;
-            if (CollisonDetector.CheckIfCanMoveBy(delta))
-            {
-                transform.localPosition += delta;
-            }
+            //AppStateManager.Instance.SelectedGameObject.GetComponent<HandDraggable>().enabled = true;
+            //var delta = manipulationData*MoveSpeed;
+            //if (CollisonDetector.CheckIfCanMoveBy(delta))
+            //{
+            //    transform.localPosition += delta;
+            //}
         }
 
         void Rotate(Vector3 manipulationData)

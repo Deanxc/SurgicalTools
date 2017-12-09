@@ -8,8 +8,8 @@
 ManipulateByGesture.sln: modified
 GeneratedProjects\UWP\Assembly-CSharp\project.json: 4FCF72A4D5EDB37E24C206A7BCFE7AF1
 GeneratedProjects\UWP\Assembly-CSharp-firstpass\project.json: 4FCF72A4D5EDB37E24C206A7BCFE7AF1
-ManipulateByGesture\App.cs: 1B524DD6136B04A9C07D735178E67BC3
-ManipulateByGesture\ManipulateByGesture.csproj: B05B3FFCEB610625D8B6C8EEF42FEB58
+ManipulateByGesture\App.cs: modified
+ManipulateByGesture\ManipulateByGesture.csproj: modified
 ManipulateByGesture\ManipulateByGesture.csproj.user: modified
 ManipulateByGesture\Package.appxmanifest: 793F79F7F593263D6D429D0541A5EC0A
 ManipulateByGesture\project.json: 1D02BC64BAC0D041019673A1C4C51737
@@ -20,5 +20,5 @@ ManipulateByGesture\Assets\Square44x44Logo.targetsize-24_altform-unplated.png: 1
 ManipulateByGesture\Assets\StoreLogo.png: 90BD194CA4A7CFFF3E8B8222229857FB
 ManipulateByGesture\Assets\Wide310x150Logo.scale-200.png: C96846A80DF667F87355569CD816192D
 ManipulateByGesture\obj\x86\Debug\ManipulateByGesture.csproj.CopyComplete: D41D8CD98F00B204E9800998ECF8427E
-ManipulateByGesture\Properties\AssemblyInfo.cs: 1424952A81F492ADA8E069DFB4167407
+ManipulateByGesture\Properties\AssemblyInfo.cs: modified
 ManipulateByGesture\Properties\Default.rd.xml: 72EB282657164E79A1C42F6240984826

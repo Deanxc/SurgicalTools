@@ -15,26 +15,31 @@ public class SpeechCommandExecuter : MonoBehaviour
 
     public void Move()
     {
+        AppStateManager.Instance.SelectedGameObject.GetComponent<HandDraggable>().enabled = true;
         TryChangeMode(ManipulationMode.Move);
     }
 
     public void Rotate()
     {
+        AppStateManager.Instance.SelectedGameObject.GetComponent<HandDraggable>().enabled = false;
         TryChangeMode(ManipulationMode.Rotate);
     }
 
     public void Scale()
     {
+        AppStateManager.Instance.SelectedGameObject.GetComponent<HandDraggable>().enabled = false;
         TryChangeMode(ManipulationMode.Scale);
     }
 
     public void Done()
     {
+        //AppStateManager.Instance.SelectedGameObject.GetComponent<HandDraggable>().enabled = false;
         TryChangeMode(ManipulationMode.None);
     }
 
     public void Delete()
     {
+        AppStateManager.Instance.SelectedGameObject.GetComponent<HandDraggable>().enabled = false;
         TryChangeMode(ManipulationMode.Delete);
     }
 

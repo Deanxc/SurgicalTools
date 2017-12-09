@@ -36,7 +36,7 @@ namespace HoloToolkit.Unity.InputModule
         public bool IsKeepUpright = false;
 
         [Tooltip("Should the object be oriented towards the user as it is being dragged?")]
-        public bool IsOrientTowardsUser = true;
+        public bool IsOrientTowardsUser = false;
 
         public bool IsDraggingEnabled = true;
 
