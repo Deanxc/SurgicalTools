@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 109434}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1, y: 1, z: 3}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -124,7 +124,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.045211792, y: 0.38331223, z: 0.019562244}
+  m_Size: {x: 0.1, y: 0.38331223, z: 0.06}
   m_Center: {x: 0, y: 0.067840576, z: 0}
 --- !u!114 &114255552176275208
 MonoBehaviour:

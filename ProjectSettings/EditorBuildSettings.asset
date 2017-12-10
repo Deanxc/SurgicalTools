@@ -6,5 +6,5 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/ManipulateByGestureMain.unity
+    path: Assets/SurgicalTools.unity
     guid: 69aed4fac52acc447bd35f0e39cfc00a

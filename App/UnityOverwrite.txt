@@ -5,7 +5,7 @@
 # Write a line equal to 'overwrite-all' (without quotes) to overwrite everything (preserved accross builds)
 # Write a line equal to 'keep-all' (without quotes) to keep files regardless their modification (preserved accross builds)
 # Default behavior is to never overwrite files
-SurgicalTools.sln: 49CD1D7B17A0E063A460760870FE232E
+SurgicalTools.sln: modified
 GeneratedProjects\UWP\Assembly-CSharp\project.json: modified
 GeneratedProjects\UWP\Assembly-CSharp-firstpass\project.json: modified
 ManipulateByGesture\App.cs: modified
@@ -22,13 +22,14 @@ ManipulateByGesture\Properties\Default.rd.xml: modified
 SurgicalTools\App.cs: 89129FC94FB11859D4713CA5C613C64D
 SurgicalTools\Package.appxmanifest: 9CFA1C84D800FE1F38558631C4B80FB8
 SurgicalTools\project.json: 1D02BC64BAC0D041019673A1C4C51737
-SurgicalTools\SurgicalTools.csproj: 5FAFB64D71A3EDB89FC23CFC23636EDE
-SurgicalTools\SurgicalTools.csproj.user: BEFB8AC4886C4CFDD3C68445D6F19B04
+SurgicalTools\SurgicalTools.csproj: 824636D2CE82A01AF591ED75C8868640
+SurgicalTools\SurgicalTools.csproj.user: modified
 SurgicalTools\Assets\SplashScreen.scale-200.png: 60618416282ED104FD1473935716045D
 SurgicalTools\Assets\Square150x150Logo.scale-200.png: E02834B4A5DFB97FF8E212C1CACBB084
 SurgicalTools\Assets\Square44x44Logo.scale-200.png: 6C6EF27184ABE9D870A9D564953775DE
 SurgicalTools\Assets\Square44x44Logo.targetsize-24_altform-unplated.png: 156637F7B5363E983E7A46D8E533A23D
 SurgicalTools\Assets\StoreLogo.png: 90BD194CA4A7CFFF3E8B8222229857FB
 SurgicalTools\Assets\Wide310x150Logo.scale-200.png: C96846A80DF667F87355569CD816192D
+SurgicalTools\obj\x86\Debug\SurgicalTools.csproj.CopyComplete: D41D8CD98F00B204E9800998ECF8427E
 SurgicalTools\Properties\AssemblyInfo.cs: 0B3DBC4F6B94AFF945A7ED80630F8A75
 SurgicalTools\Properties\Default.rd.xml: 72EB282657164E79A1C42F6240984826
