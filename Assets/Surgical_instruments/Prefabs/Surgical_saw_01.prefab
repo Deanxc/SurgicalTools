@@ -10,12 +10,6 @@ GameObject:
   - component: {fileID: 471654}
   - component: {fileID: 3391322}
   - component: {fileID: 2364176}
-  - component: {fileID: 114030482862729446}
-  - component: {fileID: 114940961385167388}
-  - component: {fileID: 65107000362177184}
-  - component: {fileID: 114293957712592526}
-  - component: {fileID: 114638206378748614}
-  - component: {fileID: 114587329086814148}
   m_Layer: 0
   m_Name: Surgical_saw_01
   m_TagString: Untagged
@@ -30,7 +24,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 189084}
   m_LocalRotation: {x: 0, y: 0.15180181, z: 0, w: 0.98841095}
-  m_LocalPosition: {x: 2, y: 1, z: 1.5}
+  m_LocalPosition: {x: 0.0028345585, y: 0.202, z: 0.071053416}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -45,6 +39,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -61,6 +56,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -87,95 +83,3 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 189084}
   m_IsPrefabParent: 1
---- !u!65 &65107000362177184
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 189084}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.5355774, y: 0.11639118, z: 0.05259704}
-  m_Center: {x: 0.23273867, y: 0.023254871, z: 0.02629852}
---- !u!114 &114030482862729446
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 189084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f035d823842c2e744ad1c8186dd6525f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MoveSpeed: 0.1
-  RotateSpeed: 6
-  ScaleSpeed: 0.2
-  Stabilizer: {fileID: 0}
-  CollisonDetector: {fileID: 0}
---- !u!114 &114293957712592526
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 189084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d1a2a33ffcac354298137001635a001, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MaxGazeCollisionDistance: 10
-  RaycastLayerMasks:
-  - serializedVersion: 2
-    m_Bits: 4294967291
-  Stabilizer: {fileID: 0}
-  GazeTransform: {fileID: 0}
---- !u!114 &114587329086814148
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 189084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54c43c8e04bfe9546b8d47be5b0f6850, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forceps: {fileID: 126434, guid: 67f1421c046a4594a8569588ba048050, type: 2}
-  graspingForceps: {fileID: 144448, guid: b6878703de721a142a1ae1e17db9b3d2, type: 2}
-  lancet: {fileID: 156074, guid: 299c28e1ab596b84481d5121867b0a03, type: 2}
-  scissors: {fileID: 139494, guid: 401a296255ba0f24f9ab6cb41086d4b3, type: 2}
-  surgicalMirror: {fileID: 135296, guid: 900758dc729b0bf40aa5ac52d16bd524, type: 2}
-  surgicalSaw: {fileID: 189084}
-  surgicalHook: {fileID: 109434, guid: 2d03d5e4fe54fd844b585de305653f05, type: 2}
-  syringe: {fileID: 145844, guid: 828baf396993e1d42ab0a8950c0d9eec, type: 2}
---- !u!114 &114638206378748614
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 189084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d5a0a60fbe897549ad0bfe2039f12b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HostTransform: {fileID: 0}
-  DistanceScale: 2
-  IsKeepUpright: 0
-  IsOrientTowardsUser: 0
-  IsDraggingEnabled: 1
---- !u!114 &114940961385167388
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 189084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3140b3056266c004c91b29fcd79aa0b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MinDistance: 0
