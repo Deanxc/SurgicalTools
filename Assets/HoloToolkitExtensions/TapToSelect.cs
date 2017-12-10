@@ -23,7 +23,18 @@ namespace LocalJoost.HoloToolkitExtensions
                 {
                     BaseAppStateManager.Instance.SelectedGameObject = gameObject;
                     //if it is not a human
-                    if (BaseAppStateManager.Instance.SelectedGameObject != GameObject.Find("HuMan"))
+                    //BaseAppStateManager.Instance.SelectedGameObject != GameObject.Find("HuMan") &&
+                    //    BaseAppStateManager.Instance.SelectedGameObject != GameObject.Find("Grasping_forceps") &&
+                    //    BaseAppStateManager.Instance.SelectedGameObject != GameObject.Find("Syringe") &&
+                    //    BaseAppStateManager.Instance.SelectedGameObject != GameObject.Find("Scissors")
+                    if (BaseAppStateManager.Instance.SelectedGameObject == GameObject.Find("Cube") ||
+                        BaseAppStateManager.Instance.SelectedGameObject == GameObject.Find("Cube (1)") ||
+                        BaseAppStateManager.Instance.SelectedGameObject == GameObject.Find("Cube (2)") ||
+                        BaseAppStateManager.Instance.SelectedGameObject == GameObject.Find("Cube (3)") ||
+                        BaseAppStateManager.Instance.SelectedGameObject == GameObject.Find("Cube (4)") ||
+                        BaseAppStateManager.Instance.SelectedGameObject == GameObject.Find("Cube (5)") ||
+                        BaseAppStateManager.Instance.SelectedGameObject == GameObject.Find("Cube (6)") ||
+                        BaseAppStateManager.Instance.SelectedGameObject == GameObject.Find("Cube (7)"))
                     {
                         //if child count is greater than 0 AND the text is Forceps
                         if (BaseAppStateManager.Instance.SelectedGameObject.transform.childCount > 0 &&
