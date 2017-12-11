@@ -20,7 +20,11 @@ We will be developing a HoloLens application for pediatric surgery.
 
 ******REFERENCES:
 https://developer.microsoft.com/en-us/windows/mixed-reality/holograms_101
+
 https://developer.microsoft.com/en-us/windows/mixed-reality/holograms_210
+
 https://developer.microsoft.com/en-us/windows/mixed-reality/holograms_211
+
 http://dotnetbyexample.blogspot.com/2017/01/manipulating-holograms-move-scale.html
+
 https://www.billmccrary.com/holotoolkit-simple-dragresizerotate/
