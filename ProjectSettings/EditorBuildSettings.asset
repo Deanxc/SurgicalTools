@@ -6,5 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/MainMenu.unity
+    guid: 44adba4fb3815934f9fd8f82b04446b9
+  - enabled: 1
     path: Assets/SurgicalTools.unity
     guid: 69aed4fac52acc447bd35f0e39cfc00a

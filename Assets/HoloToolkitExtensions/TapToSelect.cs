@@ -1,5 +1,6 @@
 ﻿using HoloToolkit.Unity.InputModule;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace LocalJoost.HoloToolkitExtensions
 {
@@ -22,12 +23,59 @@ namespace LocalJoost.HoloToolkitExtensions
                 if (BaseAppStateManager.Instance.SelectedGameObject != gameObject)
                 {
                     BaseAppStateManager.Instance.SelectedGameObject = gameObject;
-                    //if it is not a human
-                    //BaseAppStateManager.Instance.SelectedGameObject != GameObject.Find("HuMan") &&
-                    //    BaseAppStateManager.Instance.SelectedGameObject != GameObject.Find("Grasping_forceps") &&
-                    //    BaseAppStateManager.Instance.SelectedGameObject != GameObject.Find("Syringe") &&
-                    //    BaseAppStateManager.Instance.SelectedGameObject != GameObject.Find("Scissors")
-                    if (BaseAppStateManager.Instance.SelectedGameObject == GameObject.Find("Cube") ||
+
+                    // Create a temporary reference to the current scene.
+                    Scene currentScene = SceneManager.GetActiveScene();
+
+                    // Retrieve the name of this scene.
+                    string sceneName = currentScene.name;
+
+                    if (sceneName == "MainMenu")
+                    {
+                        // Do something...
+                        if (BaseAppStateManager.Instance.SelectedGameObject == GameObject.Find("CubeMenu1"))
+                        {
+                            if (BaseAppStateManager.Instance.SelectedGameObject.transform.childCount > 0 &&
+                                BaseAppStateManager.Instance.SelectedGameObject.transform.GetChild(0).GetComponent<TextMesh>().text == "Start App")
+                            {
+                                // make a forceps and add it to the collection
+                                //get menu pos
+                                //var menuPos = GameObject.Find("MenuParent").transform.position;
+                                //get position we want for forceps
+                                //var spawnPos = new Vector3(menuPos.x, menuPos.y + 0.5f, menuPos.z);
+
+                                //forceps = Instantiate(forceps, spawnPos, Quaternion.identity);
+                                //forceps.transform.parent = GameObject.Find("HologramCollection").transform;
+                                SceneManager.LoadScene(1);
+                            }
+
+                        }
+                        else if (BaseAppStateManager.Instance.SelectedGameObject == GameObject.Find("CubeMenu2"))
+                        {
+                            if (BaseAppStateManager.Instance.SelectedGameObject.transform.childCount > 0 &&
+                                BaseAppStateManager.Instance.SelectedGameObject.transform.GetChild(0).GetComponent<TextMesh>().text == "Tutorial")
+                            {
+                                // make a forceps and add it to the collection
+                                //get menu pos
+                                //var menuPos = GameObject.Find("MenuParent").transform.position;
+                                //get position we want for forceps
+                                //var spawnPos = new Vector3(menuPos.x, menuPos.y + 0.5f, menuPos.z);
+
+                                //forceps = Instantiate(forceps, spawnPos, Quaternion.identity);
+                                //forceps.transform.parent = GameObject.Find("HologramCollection").transform;
+                                //forceps = Instantiate(forceps);
+                                GameObject.Find("Instructions").GetComponent<TextMesh>().color = new Color32(0xF9, 0x91, 0x0D, 0xFF);
+
+                            }
+                            //forceps.transform.parent = GameObject.Find("HologramCollection").transform;
+                        }
+                        else { }
+
+                    }
+                    else if (sceneName == "SurgicalTools")
+                    {
+                        // Do something...
+                        if (BaseAppStateManager.Instance.SelectedGameObject == GameObject.Find("Cube") ||
                         BaseAppStateManager.Instance.SelectedGameObject == GameObject.Find("Cube (1)") ||
                         BaseAppStateManager.Instance.SelectedGameObject == GameObject.Find("Cube (2)") ||
                         BaseAppStateManager.Instance.SelectedGameObject == GameObject.Find("Cube (3)") ||
@@ -35,73 +83,83 @@ namespace LocalJoost.HoloToolkitExtensions
                         BaseAppStateManager.Instance.SelectedGameObject == GameObject.Find("Cube (5)") ||
                         BaseAppStateManager.Instance.SelectedGameObject == GameObject.Find("Cube (6)") ||
                         BaseAppStateManager.Instance.SelectedGameObject == GameObject.Find("Cube (7)"))
-                    {
-                        var menuPos = GameObject.Find("MenuParent").transform.position;
-                        var spawnPos = new Vector3(menuPos.x, menuPos.y + 0.5f, menuPos.z);
-                        //if child count is greater than 0 AND the text is Forceps
-                        if (BaseAppStateManager.Instance.SelectedGameObject.transform.childCount > 0 &&
-                            BaseAppStateManager.Instance.SelectedGameObject.transform.GetChild(0).GetComponent<TextMesh>().text == "Forceps")
                         {
-                            // make a forceps and add it to the collection
-                            //get menu pos
-                            //var menuPos = GameObject.Find("MenuParent").transform.position;
-                            //get position we want for forceps
-                            //var spawnPos = new Vector3(menuPos.x, menuPos.y + 0.5f, menuPos.z);
+                            var menuPos = GameObject.Find("MenuParent").transform.position;
+                            var spawnPos = new Vector3(menuPos.x, menuPos.y + 0.5f, menuPos.z);
+                            //if child count is greater than 0 AND the text is Forceps
+                            if (BaseAppStateManager.Instance.SelectedGameObject.transform.childCount > 0 &&
+                                BaseAppStateManager.Instance.SelectedGameObject.transform.GetChild(0).GetComponent<TextMesh>().text == "Forceps")
+                            {
+                                // make a forceps and add it to the collection
+                                //get menu pos
+                                //var menuPos = GameObject.Find("MenuParent").transform.position;
+                                //get position we want for forceps
+                                //var spawnPos = new Vector3(menuPos.x, menuPos.y + 0.5f, menuPos.z);
 
-                            forceps = Instantiate(forceps, spawnPos, Quaternion.identity);
-                            forceps.transform.parent = GameObject.Find("HologramCollection").transform;
+                                forceps = Instantiate(forceps, spawnPos, Quaternion.identity);
+                                forceps.transform.parent = GameObject.Find("HologramCollection").transform;
+                            }
+                            else if (BaseAppStateManager.Instance.SelectedGameObject.transform.childCount > 0 &&
+                                BaseAppStateManager.Instance.SelectedGameObject.transform.GetChild(0).GetComponent<TextMesh>().text == "Lancet")
+                            {
+                                // make a forceps and add it to the collection
+                                lancet = Instantiate(lancet, spawnPos, Quaternion.identity);
+                                lancet.transform.parent = GameObject.Find("HologramCollection").transform;
+                            }
+                            else if (BaseAppStateManager.Instance.SelectedGameObject.transform.childCount > 0 &&
+                                BaseAppStateManager.Instance.SelectedGameObject.transform.GetChild(0).GetComponent<TextMesh>().text == "Scissors")
+                            {
+                                // make a forceps and add it to the collection
+                                scissors = Instantiate(scissors, spawnPos, Quaternion.identity);
+                                scissors.transform.parent = GameObject.Find("HologramCollection").transform;
+                            }
+                            else if (BaseAppStateManager.Instance.SelectedGameObject.transform.childCount > 0 &&
+                                BaseAppStateManager.Instance.SelectedGameObject.transform.GetChild(0).GetComponent<TextMesh>().text == "Syringe")
+                            {
+                                // make a forceps and add it to the collection
+                                syringe = Instantiate(syringe, spawnPos, Quaternion.identity);
+                                syringe.transform.parent = GameObject.Find("HologramCollection").transform;
+                            }
+                            else if (BaseAppStateManager.Instance.SelectedGameObject.transform.childCount > 0 &&
+                                BaseAppStateManager.Instance.SelectedGameObject.transform.GetChild(0).GetComponent<TextMesh>().text == "Grasping")
+                            {
+                                // make a forceps and add it to the collection
+                                graspingForceps = Instantiate(graspingForceps, spawnPos, Quaternion.identity);
+                                graspingForceps.transform.parent = GameObject.Find("HologramCollection").transform;
+                            }
+                            else if (BaseAppStateManager.Instance.SelectedGameObject.transform.childCount > 1 &&
+                                BaseAppStateManager.Instance.SelectedGameObject.transform.GetChild(1).GetComponent<TextMesh>().text == "hook")
+                            {
+                                // make a forceps and add it to the collection
+                                surgicalHook = Instantiate(surgicalHook, spawnPos, Quaternion.identity);
+                                surgicalHook.transform.parent = GameObject.Find("HologramCollection").transform;
+                            }
+                            else if (BaseAppStateManager.Instance.SelectedGameObject.transform.childCount > 1 &&
+                                BaseAppStateManager.Instance.SelectedGameObject.transform.GetChild(1).GetComponent<TextMesh>().text == "mirror")
+                            {
+                                // make a forceps and add it to the collection
+                                surgicalMirror = Instantiate(surgicalMirror, spawnPos, Quaternion.identity);
+                                surgicalMirror.transform.parent = GameObject.Find("HologramCollection").transform;
+                            }
+                            else if (BaseAppStateManager.Instance.SelectedGameObject.transform.childCount > 1 &&
+                                BaseAppStateManager.Instance.SelectedGameObject.transform.GetChild(1).GetComponent<TextMesh>().text == "saw")
+                            {
+                                // make a forceps and add it to the collection
+                                surgicalSaw = Instantiate(surgicalSaw, spawnPos, Quaternion.identity);
+                                surgicalSaw.transform.parent = GameObject.Find("HologramCollection").transform;
+                            }
+                            else { }
                         }
-                        else if (BaseAppStateManager.Instance.SelectedGameObject.transform.childCount > 0 &&
-                            BaseAppStateManager.Instance.SelectedGameObject.transform.GetChild(0).GetComponent<TextMesh>().text == "Lancet")
-                        {
-                            // make a forceps and add it to the collection
-                            lancet = Instantiate(lancet, spawnPos, Quaternion.identity);
-                            lancet.transform.parent = GameObject.Find("HologramCollection").transform;
-                        }
-                        else if (BaseAppStateManager.Instance.SelectedGameObject.transform.childCount > 0 &&
-                            BaseAppStateManager.Instance.SelectedGameObject.transform.GetChild(0).GetComponent<TextMesh>().text == "Scissors")
-                        {
-                            // make a forceps and add it to the collection
-                            scissors = Instantiate(scissors, spawnPos, Quaternion.identity);
-                            scissors.transform.parent = GameObject.Find("HologramCollection").transform;
-                        }
-                        else if (BaseAppStateManager.Instance.SelectedGameObject.transform.childCount > 0 &&
-                            BaseAppStateManager.Instance.SelectedGameObject.transform.GetChild(0).GetComponent<TextMesh>().text == "Syringe")
-                        {
-                            // make a forceps and add it to the collection
-                            syringe = Instantiate(syringe, spawnPos, Quaternion.identity);
-                            syringe.transform.parent = GameObject.Find("HologramCollection").transform;
-                        }
-                        else if (BaseAppStateManager.Instance.SelectedGameObject.transform.childCount > 0 &&
-                            BaseAppStateManager.Instance.SelectedGameObject.transform.GetChild(0).GetComponent<TextMesh>().text == "Grasping")
-                        {
-                            // make a forceps and add it to the collection
-                            graspingForceps = Instantiate(graspingForceps, spawnPos, Quaternion.identity);
-                            graspingForceps.transform.parent = GameObject.Find("HologramCollection").transform;
-                        }
-                        else if (BaseAppStateManager.Instance.SelectedGameObject.transform.childCount > 1 &&
-                            BaseAppStateManager.Instance.SelectedGameObject.transform.GetChild(1).GetComponent<TextMesh>().text == "hook")
-                        {
-                            // make a forceps and add it to the collection
-                            surgicalHook = Instantiate(surgicalHook, spawnPos, Quaternion.identity);
-                            surgicalHook.transform.parent = GameObject.Find("HologramCollection").transform;
-                        }
-                        else if (BaseAppStateManager.Instance.SelectedGameObject.transform.childCount > 1 &&
-                            BaseAppStateManager.Instance.SelectedGameObject.transform.GetChild(1).GetComponent<TextMesh>().text == "mirror")
-                        {
-                            // make a forceps and add it to the collection
-                            surgicalMirror = Instantiate(surgicalMirror, spawnPos, Quaternion.identity);
-                            surgicalMirror.transform.parent = GameObject.Find("HologramCollection").transform;
-                        }
-                        else if (BaseAppStateManager.Instance.SelectedGameObject.transform.childCount > 1 &&
-                            BaseAppStateManager.Instance.SelectedGameObject.transform.GetChild(1).GetComponent<TextMesh>().text == "saw")
-                        {
-                            // make a forceps and add it to the collection
-                            surgicalSaw = Instantiate(surgicalSaw, spawnPos, Quaternion.identity);
-                            surgicalSaw.transform.parent = GameObject.Find("HologramCollection").transform;
-                        }
-                        else { }
                     }
+
+                    
+
+                    //if it is not a human
+                    //BaseAppStateManager.Instance.SelectedGameObject != GameObject.Find("HuMan") &&
+                    //    BaseAppStateManager.Instance.SelectedGameObject != GameObject.Find("Grasping_forceps") &&
+                    //    BaseAppStateManager.Instance.SelectedGameObject != GameObject.Find("Syringe") &&
+                    //    BaseAppStateManager.Instance.SelectedGameObject != GameObject.Find("Scissors")
+                    
                 }
                 else
                 {

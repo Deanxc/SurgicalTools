@@ -22,7 +22,7 @@ ManipulateByGesture\Properties\Default.rd.xml: modified
 SurgicalTools\App.cs: 89129FC94FB11859D4713CA5C613C64D
 SurgicalTools\Package.appxmanifest: 9CFA1C84D800FE1F38558631C4B80FB8
 SurgicalTools\project.json: 1D02BC64BAC0D041019673A1C4C51737
-SurgicalTools\SurgicalTools.csproj: 824636D2CE82A01AF591ED75C8868640
+SurgicalTools\SurgicalTools.csproj: modified
 SurgicalTools\SurgicalTools.csproj.user: modified
 SurgicalTools\Assets\SplashScreen.scale-200.png: 60618416282ED104FD1473935716045D
 SurgicalTools\Assets\Square150x150Logo.scale-200.png: E02834B4A5DFB97FF8E212C1CACBB084
