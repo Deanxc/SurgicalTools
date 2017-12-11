@@ -1,3 +1,4 @@
+
 # SurgicalTools
 
 # Group Members: Kristijan Dokic, John Dolsen, Navin Kathawa, and Dean Strawsine
@@ -19,6 +20,7 @@ We will be developing a HoloLens application for pediatric surgery.
 10) Click Start App to begin
 
 ******REFERENCES:
+
 https://developer.microsoft.com/en-us/windows/mixed-reality/holograms_101
 
 https://developer.microsoft.com/en-us/windows/mixed-reality/holograms_210
